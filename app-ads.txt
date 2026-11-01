@@ -4,7 +4,7 @@
 # Replace 'pub-0000000000000000' with your official Google AdMob Publisher ID
 # ==============================================================================
 
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-5666600154634084, DIRECT, f08c47fec0942fa0
 
 # Example if using IronSource, Unity, or AppLovin (uncomment and replace with your IDs):
 # ironsource.com, 0000, DIRECT
