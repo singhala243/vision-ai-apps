@@ -1,6 +1,6 @@
 # ==============================================================================
 # app-ads.txt - Authorized Digital Sellers for Vision AI Labs Apps
-# Place this file in the root of your domain (e.g., https://yourname.github.io/app-ads.txt)
+# Place this file in the root of your domain (e.g., https://vision-ai-apps.pages.dev/app-ads.txt)
 # Replace 'pub-0000000000000000' with your official Google AdMob Publisher ID
 # ==============================================================================
 

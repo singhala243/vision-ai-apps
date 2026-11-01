@@ -6,14 +6,15 @@ A fast, responsive, and Google Play–compliant portfolio website built for **Vi
 
 ## 🌟 Included Applications
 
-1. **VidTube** (`videoplayer.demo.com.videoplay`) – 1M+ Installs
-2. **ClearHear: Sound Amplifier EQ** (`com.clearhear.sound.amplifier`)
-3. **DocuLite: PDF Document Scanner** (`com.doculite.scanner`)
-4. **Image to PDF - PDF Maker** (`com.smart.imagetopdf.pdfmaker`)
-5. **Status Saver & Downloader** (`com.statussaver.downloader.free`)
-6. **Volume Booster -Bass Equalizer** (`com.volumebooster.bassequalizer.sound`)
-7. **Universal Remote: Smart TV** (`com.smartlink.tvremote.universal`)
-8. **MirrorCast: Cast to TV & Web** (`com.mirrorcast.casttotv.screenmirroring`)
+1. **Water Eject: Speaker Cleaner** (`com.watereject.speakercleaner.soundfix`)
+2. **VidTube** (`videoplayer.demo.com.videoplay`) – 1M+ Installs
+3. **ClearHear: Sound Amplifier EQ** (`com.clearhear.sound.amplifier`)
+4. **DocuLite: PDF Document Scanner** (`com.doculite.scanner`)
+5. **Image to PDF - PDF Maker** (`com.smart.imagetopdf.pdfmaker`)
+6. **Status Saver & Downloader** (`com.statussaver.downloader.free`)
+7. **Volume Booster -Bass Equalizer** (`com.volumebooster.bassequalizer.sound`)
+8. **Universal Remote: Smart TV** (`com.smartlink.tvremote.universal`)
+9. **MirrorCast: Cast to TV & Web** (`com.mirrorcast.casttotv.screenmirroring`)
 
 ---
 
@@ -82,11 +83,12 @@ GitHub Pages gives you a completely free domain (`https://<your-username>.github
 
 ### 1. Privacy Policy URLs for Play Console
 Google Play requires a dedicated privacy policy URL for your developer account and each app:
-- **Universal Privacy Hub**: `https://<your-domain>/privacy.html`
-- **ClearHear**: `https://<your-domain>/privacy.html?app=clearhear`
-- **VidTube**: `https://<your-domain>/privacy.html?app=vidtube`
-- **DocuLite**: `https://<your-domain>/privacy.html?app=doculite`
-- **Volume Booster**: `https://<your-domain>/privacy.html?app=volume-booster`
+- **Universal Privacy Hub**: `https://vision-ai-apps.pages.dev/privacy.html`
+- **Water Eject (Dedicated)**: `https://vision-ai-apps.pages.dev/privacy-watereject.html`
+- **ClearHear**: `https://vision-ai-apps.pages.dev/privacy.html?app=clearhear`
+- **VidTube**: `https://vision-ai-apps.pages.dev/privacy.html?app=vidtube`
+- **DocuLite**: `https://vision-ai-apps.pages.dev/privacy.html?app=doculite`
+- **Volume Booster**: `https://vision-ai-apps.pages.dev/privacy.html?app=volume-booster`
 
 Paste these links into your Google Play Console under **Policy and programs** → **App content** → **Privacy policy**.
 
