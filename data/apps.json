@@ -1,5 +1,24 @@
 [
   {
+    "id": "watereject",
+    "name": "Water Eject: Speaker Cleaner",
+    "tagline": "Eject trapped water & dust with 165Hz resonant waves, stereo diagnostics & dB meter.",
+    "category": "Tools & Utilities",
+    "categoryKey": "tools",
+    "featured": true,
+    "rating": 4.9,
+    "ratingCount": "3.8K",
+    "downloads": "100K+",
+    "packageId": "com.watereject.speakercleaner.soundfix",
+    "storeUrl": "https://play.google.com/store/apps/details?id=com.watereject.speakercleaner.soundfix",
+    "privacyUrl": "privacy.html?app=watereject",
+    "icon": "assets/icons/watereject.svg",
+    "accentColor": "#0284c7",
+    "gradient": "from-sky-500 to-blue-600",
+    "tags": ["165 Hz Wave", "Water Remover", "Dust Shaker", "Decibel Meter"],
+    "description": "Quickly expel water droplets and clear muffled sound from phone speaker grilles and top call earpiece. Features automated 45s resonant frequency sweeps (165Hz–140Hz), low-end dust shaker vibrations, tone generator, hardware diagnostics, and a calibrated real-time decibel meter."
+  },
+  {
     "id": "vidtube",
     "name": "VidTube",
     "tagline": "All-format HD video player supporting 4K playback, pop-up window & background play.",
