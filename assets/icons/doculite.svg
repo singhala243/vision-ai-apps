@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="docBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#064E3B" />
+    </linearGradient>
+    <linearGradient id="scanBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0" />
+      <stop offset="50%" stop-color="#6EE7B7" stop-opacity="1" />
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0" />
+    </linearGradient>
+    <filter id="laserGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#34D399" flood-opacity="0.8" />
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#docBg)" />
+  
+  <!-- Document paper sheet -->
+  <g transform="translate(136, 100)">
+    <path d="M 0 0 L 160 0 L 240 80 L 240 312 L 0 312 Z" fill="#F8FAFC" rx="16" />
+    <path d="M 160 0 L 160 80 L 240 80 Z" fill="#E2E8F0" />
+    <!-- Text Lines -->
+    <rect x="36" y="110" width="168" height="14" rx="7" fill="#94A3B8" />
+    <rect x="36" y="140" width="140" height="14" rx="7" fill="#94A3B8" />
+    <rect x="36" y="170" width="168" height="14" rx="7" fill="#94A3B8" />
+    <rect x="36" y="200" width="110" height="14" rx="7" fill="#94A3B8" />
+  </g>
+  
+  <!-- Auto-crop Viewfinder Corners -->
+  <path d="M 106 136 L 106 80 L 162 80" fill="none" stroke="#6EE7B7" stroke-width="12" stroke-linecap="round" />
+  <path d="M 406 136 L 406 80 L 350 80" fill="none" stroke="#6EE7B7" stroke-width="12" stroke-linecap="round" />
+  <path d="M 106 376 L 106 432 L 162 432" fill="none" stroke="#6EE7B7" stroke-width="12" stroke-linecap="round" />
+  <path d="M 406 376 L 406 432 L 350 432" fill="none" stroke="#6EE7B7" stroke-width="12" stroke-linecap="round" />
+  
+  <!-- Laser scan line -->
+  <line x1="80" y1="260" x2="432" y2="260" stroke="url(#scanBeam)" stroke-width="10" filter="url(#laserGlow)" stroke-linecap="round" />
+</svg>

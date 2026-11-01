@@ -1,0 +1,12 @@
+# ==============================================================================
+# app-ads.txt - Authorized Digital Sellers for Vision AI Labs Apps
+# Place this file in the root of your domain (e.g., https://yourname.github.io/app-ads.txt)
+# Replace 'pub-0000000000000000' with your official Google AdMob Publisher ID
+# ==============================================================================
+
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+
+# Example if using IronSource, Unity, or AppLovin (uncomment and replace with your IDs):
+# ironsource.com, 0000, DIRECT
+# unityads.unity3d.com, 0000, DIRECT
+# applovin.com, 0000, DIRECT

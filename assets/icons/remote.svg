@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="remBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0891B2" />
+      <stop offset="100%" stop-color="#164E63" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#remBg)" />
+  
+  <!-- Remote body -->
+  <rect x="176" y="80" width="160" height="352" rx="44" fill="#0F172A" stroke="#22D3EE" stroke-width="6" />
+  
+  <!-- Power button -->
+  <circle cx="256" cy="136" r="20" fill="#EF4444" />
+  <path d="M 256 124 L 256 134 M 250 128 A 12 12 0 1 0 262 128" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Directional D-Pad -->
+  <circle cx="256" cy="236" r="46" fill="#1E293B" stroke="#334155" stroke-width="4" />
+  <circle cx="256" cy="236" r="18" fill="#22D3EE" />
+  
+  <!-- Channel & Volume Pill Buttons -->
+  <rect x="206" y="316" width="34" height="66" rx="17" fill="#1E293B" stroke="#334155" stroke-width="3" />
+  <rect x="272" y="316" width="34" height="66" rx="17" fill="#1E293B" stroke="#334155" stroke-width="3" />
+  <text x="223" y="344" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="16" font-weight="900" text-anchor="middle">+</text>
+  <text x="223" y="372" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="16" font-weight="900" text-anchor="middle">-</text>
+  <text x="289" y="344" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="16" font-weight="900" text-anchor="middle">▲</text>
+  <text x="289" y="372" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="16" font-weight="900" text-anchor="middle">▼</text>
+  
+  <!-- WiFi Signal Emitted from Top -->
+  <path d="M 230 54 A 36 36 0 0 1 282 54" fill="none" stroke="#67E8F9" stroke-width="6" stroke-linecap="round" />
+  <path d="M 216 38 A 56 56 0 0 1 296 38" fill="none" stroke="#67E8F9" stroke-width="6" stroke-linecap="round" />
+</svg>

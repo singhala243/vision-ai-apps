@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision AI Labs - Intelligent Android Apps & Utilities</title>
+  <meta name="description" content="Discover smart Android utilities, media players, PDF scanners, and sound enhancers created by Vision AI Labs on the Google Play Store.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+  
+  <!-- Tailwind CSS & FontAwesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Glow Accents Background -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-sky-500/15 rounded-full blur-3xl animate-pulse-glow"></div>
+    <div class="absolute top-1/3 -right-40 w-96 h-96 bg-indigo-500/15 rounded-full blur-3xl animate-pulse-glow" style="animation-delay: 1.5s;"></div>
+    <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse-glow" style="animation-delay: 3s;"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="relative">
+          <img src="assets/icons/logo.svg" alt="Vision AI Labs" class="w-10 h-10 rounded-2xl shadow-lg border border-slate-700/60 group-hover:scale-105 transition-all">
+          <div class="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-2 border-slate-950 flex items-center justify-center text-[9px] text-white">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-black text-xl tracking-tight text-white group-hover:text-sky-400 transition-colors">Vision AI Labs</span>
+          </div>
+          <span class="text-xs text-slate-400 block -mt-0.5">Google Play Developer Portfolio</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#apps" class="hover:text-sky-400 transition-colors">All Apps</a>
+        <a href="#spotlight" class="hover:text-sky-400 transition-colors">Featured</a>
+        <a href="#features" class="hover:text-sky-400 transition-colors">Why Choose Us</a>
+        <a href="privacy.html" class="hover:text-sky-400 transition-colors">Privacy Hub</a>
+        <a href="#contact" class="hover:text-sky-400 transition-colors">Support</a>
+      </div>
+
+      <!-- Play Store Link Action -->
+      <div class="flex items-center gap-3">
+        <a href="https://play.google.com/store/apps/developer?id=Vision+AI+Labs" target="_blank" rel="noopener" class="play-store-btn px-4 py-2.5 rounded-xl text-xs font-bold text-white flex items-center gap-2.5 shadow-md">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3.609 1.814L13.792 12 3.61 22.186a2.023 2.023 0 0 1-.22-.924V2.738c0-.342.08-.66.22-.924zm11.396 11.397l2.25 2.25-11.44 6.435 9.19-8.685zm0-2.422L5.815 2.104l11.44 6.435-2.25 2.25zm1.206 1.206l3.963 2.229c.833.468.833 1.233 0 1.701l-3.963 2.23-2.126-2.126 2.126-2.126z"/>
+          </svg>
+          <span class="hidden sm:inline">Play Store Profile</span>
+          <span class="sm:hidden">Play Store</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative pt-12 pb-20 sm:pt-20 sm:pb-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    
+    <!-- Trust Badge -->
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-semibold text-sky-400 shadow-md mb-8">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span>Official Google Play Developer Portal</span>
+      <span class="text-slate-600">•</span>
+      <span class="text-slate-300">500,000+ Downloads</span>
+    </div>
+
+    <!-- Main Headline -->
+    <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight max-w-4xl mx-auto leading-[1.15]">
+      Intelligent Mobile Tools Built for <span class="bg-gradient-to-r from-sky-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Everyday Performance</span>
+    </h1>
+
+    <p class="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+      High-performance Android utilities designed with privacy-first on-device AI. From sub-20ms audio sound amplification to 4K media playback and smart document scanning.
+    </p>
+
+    <!-- CTAs -->
+    <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+      <a href="#apps" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold text-sm shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 hover:scale-[1.02] transition-all flex items-center gap-2">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Explore All 8 Apps</span>
+      </a>
+
+      <a href="https://play.google.com/store/apps/developer?id=Vision+AI+Labs" target="_blank" rel="noopener" class="px-6 py-3.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 hover:text-white font-semibold text-sm hover:border-slate-700 transition-all flex items-center gap-2">
+        <i class="fa-brands fa-google-play text-sky-400"></i>
+        <span>Google Play Store</span>
+      </a>
+    </div>
+
+    <!-- Key Metrics Stats Strip -->
+    <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+      <div class="glass-panel p-5 rounded-2xl">
+        <div class="text-2xl sm:text-3xl font-black text-white">8+</div>
+        <div class="text-xs text-slate-400 mt-1">Published Apps</div>
+      </div>
+      <div class="glass-panel p-5 rounded-2xl">
+        <div class="text-2xl sm:text-3xl font-black text-amber-400">4.7 ★</div>
+        <div class="text-xs text-slate-400 mt-1">Average Store Rating</div>
+      </div>
+      <div class="glass-panel p-5 rounded-2xl">
+        <div class="text-2xl sm:text-3xl font-black text-emerald-400">500K+</div>
+        <div class="text-xs text-slate-400 mt-1">Active Android Installs</div>
+      </div>
+      <div class="glass-panel p-5 rounded-2xl">
+        <div class="text-2xl sm:text-3xl font-black text-sky-400">100%</div>
+        <div class="text-xs text-slate-400 mt-1">On-Device Privacy</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Featured Spotlight Section: ClearHear & VidTube -->
+  <section id="spotlight" class="py-16 bg-slate-900/40 border-y border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-sky-400 font-mono">Spotlight Release</span>
+          <h2 class="text-3xl font-extrabold text-white mt-1">Flagship Applications</h2>
+        </div>
+        <p class="text-sm text-slate-400 mt-2 md:mt-0 max-w-md">
+          Engineered with cutting-edge C++ native audio engines and hardware-accelerated rendering.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Spotlight Card 1: ClearHear -->
+        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-slate-900 to-sky-950/40 border border-sky-500/20 p-8 sm:p-10 flex flex-col justify-between">
+          <div class="relative z-10">
+            <div class="flex items-center gap-4 mb-6">
+              <img src="assets/icons/clearhear.png" alt="ClearHear Icon" class="w-20 h-20 rounded-2xl shadow-xl border border-sky-500/30 object-cover">
+              <div>
+                <span class="px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 text-xs font-semibold">
+                  Audio & Sound • Top Utility
+                </span>
+                <h3 class="text-2xl font-black text-white mt-1">ClearHear: Sound Amplifier EQ</h3>
+                <div class="flex items-center gap-2 text-xs text-slate-400 mt-1">
+                  <span class="text-amber-400 font-bold">4.8 ★</span>
+                  <span>•</span>
+                  <span>50K+ Downloads</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              Amplify conversations, isolate human speech, and filter background restaurant chatter straight to your earbuds. Built with Google C++ Oboe AAudio achieving sub-20ms ultra-low roundtrip latency and an 85dB safety limiter.
+            </p>
+
+            <div class="grid grid-cols-2 gap-3 mb-8 text-xs">
+              <div class="flex items-center gap-2 text-slate-300">
+                <i class="fa-solid fa-bolt text-sky-400"></i>
+                <span>Sub-20ms Roundtrip Delay</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-300">
+                <i class="fa-solid fa-brain text-sky-400"></i>
+                <span>RNNoise AI Voice Isolation</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-300">
+                <i class="fa-solid fa-shield-heart text-sky-400"></i>
+                <span>85 dB Brickwall Safety Limiter</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-300">
+                <i class="fa-solid fa-sliders text-sky-400"></i>
+                <span>Custom Earbud Graphic EQ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative z-10 flex flex-wrap items-center gap-4 pt-6 border-t border-slate-800">
+            <a href="https://play.google.com/store/apps/developer?id=Vision+AI+Labs" target="_blank" rel="noopener" class="play-store-btn px-5 py-3 rounded-xl font-bold text-xs text-white flex items-center gap-2">
+              <i class="fa-brands fa-google-play text-sky-400"></i>
+              <span>Download on Play Store</span>
+            </a>
+            <a href="privacy.html?app=clearhear" class="text-xs text-slate-400 hover:text-white flex items-center gap-1.5 transition-colors">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Spotlight Card 2: VidTube -->
+        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-slate-900 to-rose-950/40 border border-rose-500/20 p-8 sm:p-10 flex flex-col justify-between">
+          <div class="relative z-10">
+            <div class="flex items-center gap-4 mb-6">
+              <img src="assets/icons/vidtube.webp" alt="VidTube Icon" class="w-20 h-20 rounded-2xl shadow-xl border border-rose-500/30 object-cover">
+              <div>
+                <span class="px-2.5 py-0.5 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30 text-xs font-semibold">
+                  Media & Video Player • 1M+ Installs
+                </span>
+                <h3 class="text-2xl font-black text-white mt-1">VidTube</h3>
+                <div class="flex items-center gap-2 text-xs text-slate-400 mt-1">
+                  <span class="text-amber-400 font-bold">4.6 ★</span>
+                  <span>•</span>
+                  <span>1,000,000+ Downloads</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              Plays all 4K Ultra HD video formats effortlessly with hardware decoding. Enjoy seamless background audio playback, pop-up floating mini-player for multitasking, and intuitive gesture controls.
+            </p>
+
+            <div class="grid grid-cols-2 gap-3 mb-8 text-xs">
+              <div class="flex items-center gap-2 text-slate-300">
+                <i class="fa-solid fa-film text-rose-400"></i>
+                <span>All Formats (MKV, MP4, AVI)</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-300">
+                <i class="fa-solid fa-window-restore text-rose-400"></i>
+                <span>Floating Pop-up Window</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-300">
+                <i class="fa-solid fa-closed-captioning text-rose-400"></i>
+                <span>Multi-Language Subtitles</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-300">
+                <i class="fa-solid fa-microchip text-rose-400"></i>
+                <span>HW+ Hardware Acceleration</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative z-10 flex flex-wrap items-center gap-4 pt-6 border-t border-slate-800">
+            <a href="https://play.google.com/store/apps/details?id=videoplayer.demo.com.videoplay" target="_blank" rel="noopener" class="play-store-btn px-5 py-3 rounded-xl font-bold text-xs text-white flex items-center gap-2">
+              <i class="fa-brands fa-google-play text-rose-400"></i>
+              <span>Download on Play Store</span>
+            </a>
+            <a href="privacy.html?app=vidtube" class="text-xs text-slate-400 hover:text-white flex items-center gap-1.5 transition-colors">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- All Apps Directory Section -->
+  <section id="apps" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Header & Filter Controls -->
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
+      <div>
+        <div class="flex items-center gap-3">
+          <h2 class="text-3xl font-extrabold text-white">Application Catalog</h2>
+          <span id="totalAppsCount" class="px-2.5 py-0.5 rounded-full bg-slate-800 text-sky-400 text-xs font-semibold border border-slate-700">
+            8 Apps Published
+          </span>
+        </div>
+        <p class="text-sm text-slate-400 mt-1">Browse, filter, and download directly from Google Play</p>
+      </div>
+
+      <!-- Search Input -->
+      <div class="relative w-full md:w-80">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+        <input type="text" id="searchInput" placeholder="Search by name, tag, or feature..." class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500">
+      </div>
+    </div>
+
+    <!-- Category Filter Chips -->
+    <div class="flex flex-wrap items-center gap-2 mb-10 pb-2 border-b border-slate-800/80">
+      <button data-category="all" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-sky-500 text-white shadow-md transition-all">
+        All Apps (8)
+      </button>
+      <button data-category="audio" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:text-white transition-all">
+        Audio & Sound (2)
+      </button>
+      <button data-category="productivity" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:text-white transition-all">
+        Productivity & PDF (2)
+      </button>
+      <button data-category="media" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:text-white transition-all">
+        Media & Video (2)
+      </button>
+      <button data-category="utilities" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:text-white transition-all">
+        Utilities (2)
+      </button>
+    </div>
+
+    <!-- Dynamic Cards Grid (Rendered by JS) -->
+    <div id="appsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <!-- Cards are populated via main.js -->
+    </div>
+  </section>
+
+  <!-- Value & Security Features Section -->
+  <section id="features" class="py-20 bg-slate-900/50 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-sky-400 font-mono">Our Quality Standards</span>
+        <h2 class="text-3xl font-extrabold text-white mt-2">Why Android Users Trust Vision AI Labs</h2>
+        <p class="text-sm text-slate-400 mt-2">Every application is engineered with high standards for speed, security, and battery efficiency.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="glass-panel p-8 rounded-3xl border border-slate-800">
+          <div class="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 text-xl mb-6">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">100% On-Device Processing</h3>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            Your camera scans, audio microphone streams, and documents stay completely on your phone. No personal data is sent to external cloud servers.
+          </p>
+        </div>
+
+        <div class="glass-panel p-8 rounded-3xl border border-slate-800">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl mb-6">
+            <i class="fa-solid fa-shield-virus"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Google Play Protect Verified</h3>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            All app builds pass Google Play Protect security screening and comply strictly with Android user data safety guidelines.
+          </p>
+        </div>
+
+        <div class="glass-panel p-8 rounded-3xl border border-slate-800">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-xl mb-6">
+            <i class="fa-solid fa-battery-three-quarters"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Optimized Battery Life</h3>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            Compiled with C++ native components (Oboe, FFmpeg, OpenCV) to provide responsive performance while conserving device battery life.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Support & Contact Section -->
+  <section id="contact" class="py-20 max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 rounded-3xl p-8 sm:p-12 text-center shadow-2xl">
+      <div class="w-16 h-16 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center mx-auto mb-6 text-2xl border border-sky-500/20">
+        <i class="fa-solid fa-envelope-open-text"></i>
+      </div>
+      <h2 class="text-3xl font-extrabold text-white">Developer Support & Feedback</h2>
+      <p class="text-slate-400 text-sm max-w-xl mx-auto mt-3">
+        Have questions about our apps, feature requests, or bug reports? Our development team is here to assist.
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <a href="mailto:visionailabs@gmail.com" class="px-6 py-3.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-white font-bold text-sm shadow-md transition-all flex items-center gap-2">
+          <i class="fa-solid fa-envelope"></i>
+          <span>visionailabs@gmail.com</span>
+        </a>
+        <a href="https://play.google.com/store/apps/developer?id=Vision+AI+Labs" target="_blank" rel="noopener" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-sm transition-all flex items-center gap-2">
+          <i class="fa-brands fa-google-play text-sky-400"></i>
+          <span>Developer Play Console</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 bg-slate-950 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <img src="assets/icons/logo.svg" alt="Vision AI Labs" class="w-8 h-8 rounded-lg">
+        <span class="font-bold text-white text-sm">Vision AI Labs</span>
+        <span>•</span>
+        <span>© 2026 All Rights Reserved</span>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-6">
+        <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy Hub</a>
+        <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+        <a href="app-ads.txt" class="hover:text-white transition-colors">app-ads.txt</a>
+        <a href="https://play.google.com/store/apps/developer?id=Vision+AI+Labs" target="_blank" rel="noopener" class="hover:text-white transition-colors">Play Store Account</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- App Details Modal -->
+  <div id="appModal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700/80 rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl overflow-y-auto max-h-[90vh]">
+      
+      <div class="flex items-start justify-between gap-4 mb-6">
+        <div class="flex items-center gap-4">
+          <img id="modalIcon" src="assets/icons/logo.svg" alt="App Icon" class="w-16 h-16 rounded-2xl shadow-lg border border-slate-700">
+          <div>
+            <span id="modalCategory" class="text-[11px] font-bold uppercase tracking-wider text-sky-400 font-mono">Category</span>
+            <h3 id="modalTitle" class="text-xl font-bold text-white mt-0.5">App Title</h3>
+            <div class="flex items-center gap-2 text-xs text-slate-400 mt-0.5">
+              <span id="modalRating" class="text-amber-400 font-bold">4.8 ★</span>
+              <span>•</span>
+              <span id="modalDownloads">50K+ Installs</span>
+            </div>
+          </div>
+        </div>
+
+        <button id="closeModalBtn" class="text-slate-400 hover:text-white p-2 rounded-xl hover:bg-slate-800 transition-colors">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <p id="modalTagline" class="text-sm font-semibold text-slate-200 mb-3"></p>
+      <p id="modalDescription" class="text-xs text-slate-400 leading-relaxed mb-6"></p>
+
+      <!-- Key Tags -->
+      <div id="modalTags" class="flex flex-wrap gap-1.5 mb-6"></div>
+
+      <!-- Package ID Copy -->
+      <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 flex items-center justify-between mb-6">
+        <div class="text-xs text-slate-400 font-mono truncate mr-2">
+          <span class="text-slate-500">Package:</span> <span id="modalPackageId" class="text-slate-200">com.example.app</span>
+        </div>
+        <button id="copyPackageBtn" class="px-2.5 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors" title="Copy Package ID">
+          <i class="fa-regular fa-copy"></i>
+          <span>Copy</span>
+        </button>
+      </div>
+
+      <!-- Modal Actions -->
+      <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+        <a id="modalPlayLink" href="#" target="_blank" rel="noopener" class="play-store-btn flex-1 py-3 px-4 rounded-xl text-center font-bold text-xs text-white shadow-md flex items-center justify-center gap-2">
+          <i class="fa-brands fa-google-play text-sky-400"></i>
+          <span>Get on Google Play</span>
+        </a>
+        <a id="modalPrivacyLink" href="privacy.html" class="p-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors" title="Privacy Policy">
+          <i class="fa-solid fa-shield-halved"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
