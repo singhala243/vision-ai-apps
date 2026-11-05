@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vcBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#4C1D95" />
+    </linearGradient>
+    <linearGradient id="micGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#C4B5FD" />
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="22" fill="url(#vcBgGrad)" />
+  <!-- Sound Wave Bars in background -->
+  <rect x="18" y="44" width="4" height="12" rx="2" fill="#DDD6FE" opacity="0.5" />
+  <rect x="26" y="36" width="4" height="28" rx="2" fill="#DDD6FE" opacity="0.6" />
+  <rect x="70" y="36" width="4" height="28" rx="2" fill="#DDD6FE" opacity="0.6" />
+  <rect x="78" y="44" width="4" height="12" rx="2" fill="#DDD6FE" opacity="0.5" />
+  
+  <!-- Microphone Body -->
+  <rect x="42" y="22" width="16" height="30" rx="8" fill="url(#micGrad)" />
+  <!-- Mic Grille Lines -->
+  <line x1="44" y1="32" x2="56" y2="32" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="44" y1="38" x2="56" y2="38" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" />
+  <!-- Mic Stand Arc -->
+  <path d="M35 38 C35 52 65 52 65 38" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+  <!-- Mic Stem & Base -->
+  <line x1="50" y1="52" x2="50" y2="68" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+  <line x1="38" y1="68" x2="62" y2="68" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+  <!-- Magic sparkle / effect star -->
+  <path d="M68 20 Q73 24 77 24 Q73 24 68 28 Q73 24 68 20 Z" fill="#FDE047" />
+  <circle cx="73" cy="24" r="2" fill="#FDE047" />
+</svg>

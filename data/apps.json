@@ -1,5 +1,24 @@
 [
   {
+    "id": "voicechanger",
+    "name": "Voice Changer: Audio Effects",
+    "tagline": "Transform voice recordings with 25+ studio effects, text-to-speech & audio notes.",
+    "category": "Audio & Sound",
+    "categoryKey": "audio",
+    "featured": true,
+    "rating": 4.9,
+    "ratingCount": "1.5K",
+    "downloads": "50K+",
+    "packageId": "com.audioutility.voicerecorder.effects",
+    "storeUrl": "https://play.google.com/store/apps/developer?id=Vision+AI+Labs",
+    "privacyUrl": "privacy-voicechanger.html",
+    "icon": "assets/icons/voicechanger.svg",
+    "accentColor": "#7c3aed",
+    "gradient": "from-purple-600 to-indigo-700",
+    "tags": ["25+ Studio Effects", "Text-to-Speech", "Voice Notes", "100% On-Device"],
+    "description": "Powerful voice transformation studio with real-time DSP effects, robotic synthesis, ambient environments, chipmunk, giant, helium, and text-to-speech audio converter. All audio processing is executed 100% on-device for maximum privacy."
+  },
+  {
     "id": "watereject",
     "name": "Water Eject: Speaker Cleaner",
     "tagline": "Eject trapped water & dust with 165Hz resonant waves, stereo diagnostics & dB meter.",

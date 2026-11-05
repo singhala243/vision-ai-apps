@@ -66,6 +66,7 @@
           <label for="appSelector" class="block text-xs font-medium text-slate-400 mb-1">Select Specific Application:</label>
           <select id="appSelector" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500">
             <option value="general">All Vision AI Labs Apps (General)</option>
+            <option value="voicechanger">Voice Changer: Audio Effects</option>
             <option value="watereject">Water Eject: Speaker Cleaner</option>
             <option value="clearhear">ClearHear: Sound Amplifier EQ</option>
             <option value="vidtube">VidTube - HD Video Player</option>
@@ -245,6 +246,12 @@
   <!-- Dynamic App Selector Script -->
   <script>
     const appNotices = {
+      'voicechanger': {
+        title: 'Voice Changer 100% On-Device Processing Notice',
+        body: 'Voice Changer processes all vocal recordings and acoustic filters entirely on your local physical device. No raw microphone audio or exported clips are uploaded or stored on cloud servers. In compliance with Android OS architecture and Google Play policies, this utility does NOT record or intercept live cellular phone calls.',
+        borderClass: 'border-purple-500/30 bg-purple-950/30 text-purple-200',
+        iconClass: 'fa-microphone-lines text-purple-400'
+      },
       'watereject': {
         title: 'Water Eject & Acoustic Speaker Cleaner Notice',
         body: 'Water Eject uses acoustic resonant sound sweeps (165Hz–140Hz) and synchronized haptic pulses to mechanically displace trapped water and dust from phone speaker grilles. Microphone access is used exclusively in real time for ambient decibel (dB) metering and a 3-second diagnostic loopback. Audio is processed strictly in volatile device RAM and is NEVER recorded, saved, or uploaded. This app is an acoustic maintenance utility and does not repair physically torn or damaged hardware.',
