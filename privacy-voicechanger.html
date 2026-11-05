@@ -29,22 +29,27 @@
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-purple-500 selection:text-white">
 
   <!-- Top Navigation Bar -->
-  <header class="sticky top-0 z-40 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3 group">
-        <img src="assets/icons/voicechanger.svg" alt="Voice Changer Logo" class="w-9 h-9 rounded-xl shadow-md group-hover:scale-105 transition-transform">
-        <div class="leading-tight">
-          <span class="font-bold text-lg text-white group-hover:text-purple-400 transition-colors">Voice Changer: Audio Effects</span>
-          <span class="block text-xs text-slate-400">Vision AI Labs • Privacy Policy</span>
+  <header class="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+      <!-- Brand on Left -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 min-w-0 group">
+        <img src="assets/icons/voicechanger.svg" alt="Voice Changer Logo" class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl shadow-md flex-shrink-0 group-hover:scale-105 transition-transform">
+        <div class="leading-tight min-w-0">
+          <span class="font-bold text-sm sm:text-base text-white group-hover:text-purple-400 transition-colors truncate block">
+            Voice Changer<span class="hidden md:inline text-purple-300">: Audio Effects</span>
+          </span>
+          <span class="block text-[11px] text-slate-400 truncate">Vision AI Labs • Privacy Policy</span>
         </div>
       </a>
-      <div class="flex items-center gap-4 text-sm">
-        <a href="privacy.html" class="text-slate-300 hover:text-white transition-colors flex items-center gap-1.5">
-          <i class="fa-solid fa-layer-group"></i>
-          <span>All Apps Policy Hub</span>
+      
+      <!-- Nav Links on Right -->
+      <div class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
+        <a href="privacy.html" class="hidden sm:flex text-slate-300 hover:text-white transition-colors items-center gap-1.5 text-xs sm:text-sm px-2.5 py-1.5 rounded-lg hover:bg-slate-800">
+          <i class="fa-solid fa-layer-group text-purple-400"></i>
+          <span>Policy Hub</span>
         </a>
-        <a href="index.html" class="text-slate-300 hover:text-white transition-colors flex items-center gap-1.5">
-          <i class="fa-solid fa-arrow-left"></i>
+        <a href="index.html" class="text-slate-300 hover:text-white transition-colors flex items-center gap-1.5 text-xs sm:text-sm px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-800 border border-slate-700/60">
+          <i class="fa-solid fa-house text-purple-400"></i>
           <span>Home</span>
         </a>
       </div>
@@ -52,17 +57,64 @@
   </header>
 
   <!-- Main Content Container -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
 
     <!-- Header Hero Card -->
-    <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 sm:p-8 mb-8 shadow-xl">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div>
-          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-3">
-            <i class="fa-solid fa-shield-halved"></i> Google Play Compliant • Package: com.audioutility.voicerecorder.effects
-          </span>
-          <h1 class="text-2xl sm:text-3xl font-extrabold text-white">Privacy Policy for Voice Changer: Audio Effects</h1>
-          <p class="text-sm text-slate-400 mt-1">Effective Date: November 1, 2026 • Last Updated: November 2026</p>
+    <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-purple-950/40 border border-slate-800 rounded-3xl p-6 sm:p-8 mb-8 shadow-2xl relative overflow-hidden">
+      <!-- Glow ambient background -->
+      <div class="absolute -top-12 -right-12 w-48 h-48 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="flex flex-col md:flex-row items-start md:items-center gap-5 sm:gap-6 relative z-10">
+        <!-- App Icon -->
+        <div class="relative flex-shrink-0">
+          <img src="assets/icons/voicechanger.svg" alt="Voice Changer Icon" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl shadow-xl border-2 border-purple-500/30">
+          <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-purple-600 rounded-full border-2 border-slate-900 flex items-center justify-center text-[11px] text-white shadow">
+            <i class="fa-solid fa-microphone"></i>
+          </div>
+        </div>
+
+        <!-- Title & Metadata -->
+        <div class="flex-1 min-w-0">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-xs font-semibold bg-purple-500/15 text-purple-300 border border-purple-500/30">
+              <i class="fa-solid fa-shield-halved text-purple-400"></i> Google Play Compliant
+            </span>
+            <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-mono text-slate-400 bg-slate-800/80 border border-slate-700/60">
+              com.audioutility.voicerecorder.effects
+            </span>
+          </div>
+
+          <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Privacy Policy for Voice Changer: Audio Effects
+          </h1>
+
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-400 mt-2">
+            <span><strong class="text-slate-300">Developer:</strong> Vision AI Labs</span>
+            <span>•</span>
+            <span><strong class="text-slate-300">Effective Date:</strong> November 1, 2026</span>
+            <span>•</span>
+            <span><strong class="text-slate-300">Status:</strong> Active & Compliant</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Badges -->
+      <div class="mt-6 pt-5 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+        <div class="flex items-center gap-2 text-slate-300">
+          <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
+          <span>100% On-Device DSP</span>
+        </div>
+        <div class="flex items-center gap-2 text-slate-300">
+          <i class="fa-solid fa-cloud-slash text-purple-400 text-sm"></i>
+          <span>Zero Cloud Uploads</span>
+        </div>
+        <div class="flex items-center gap-2 text-slate-300">
+          <i class="fa-solid fa-phone-slash text-sky-400 text-sm"></i>
+          <span>No Call Recording</span>
+        </div>
+        <div class="flex items-center gap-2 text-slate-300">
+          <i class="fa-solid fa-user-shield text-amber-400 text-sm"></i>
+          <span>GDPR & CCPA Ready</span>
         </div>
       </div>
     </div>
