@@ -66,6 +66,7 @@
           <label for="appSelector" class="block text-xs font-medium text-slate-400 mb-1">Select Specific Application:</label>
           <select id="appSelector" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500">
             <option value="general">All Vision AI Labs Apps (General)</option>
+            <option value="videocompressor">Video Compressor: Resize Video</option>
             <option value="voicechanger">Voice Changer: Voice Effects</option>
             <option value="watereject">Water Eject: Speaker Cleaner</option>
             <option value="clearhear">ClearHear: Sound Amplifier EQ</option>
@@ -246,6 +247,12 @@
   <!-- Dynamic App Selector Script -->
   <script>
     const appNotices = {
+      'videocompressor': {
+        title: 'Video Compressor 100% On-Device Processing Notice',
+        body: 'Video Compressor processes and transcodes all videos entirely on your local physical device using Android hardware MediaCodec and Media3 Transformer. No video files, audio tracks, or frames are ever uploaded to external cloud servers. The app uses the system Photo Picker and does not request broad storage permissions.',
+        borderClass: 'border-emerald-500/30 bg-emerald-950/30 text-emerald-200',
+        iconClass: 'fa-compress text-emerald-400'
+      },
       'voicechanger': {
         title: 'Voice Changer 100% On-Device Processing Notice',
         body: 'Voice Changer processes all vocal recordings and acoustic filters entirely on your local physical device. No raw microphone audio or exported clips are uploaded or stored on cloud servers. In compliance with Android OS architecture and Google Play policies, this utility does NOT record or intercept live cellular phone calls.',

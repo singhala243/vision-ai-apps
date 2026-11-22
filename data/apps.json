@@ -1,5 +1,24 @@
 [
   {
+    "id": "videocompressor",
+    "name": "Video Compressor: Resize Video",
+    "tagline": "Compress, convert, and resize videos to reduce file size without losing quality.",
+    "category": "Media & Video",
+    "categoryKey": "media",
+    "featured": true,
+    "rating": 4.9,
+    "ratingCount": "2.4K",
+    "downloads": "50K+",
+    "packageId": "com.videocompressor.shrink.resize",
+    "storeUrl": "https://play.google.com/store/apps/details?id=com.videocompressor.shrink.resize",
+    "privacyUrl": "privacy-videocompressor.html",
+    "icon": "assets/icons/videocompressor.svg",
+    "accentColor": "#059669",
+    "gradient": "from-emerald-500 to-teal-700",
+    "tags": ["Fast 4K Transcoding", "H.264 & H.265", "Video Cutter & Trim", "100% On-Device"],
+    "description": "Fast video compressor, resizer, and format converter powered by on-device hardware MediaCodec and Media3 Transformer. Shrink video MB size for WhatsApp, Discord, and Email while keeping crisp resolution. All video processing is executed 100% on-device for maximum privacy."
+  },
+  {
     "id": "voicechanger",
     "name": "Voice Changer: Voice Effects",
     "tagline": "Transform voice recordings with 25+ studio effects, text-to-speech & audio notes.",
