@@ -1,5 +1,24 @@
 [
   {
+    "id": "geotag",
+    "name": "Geotag: GPS Map Camera",
+    "tagline": "Stamp photos & videos with live GPS coordinates, map tile, compass azimuth & verified time.",
+    "category": "Tools & Utilities",
+    "categoryKey": "tools",
+    "featured": true,
+    "rating": 4.9,
+    "ratingCount": "1.8K",
+    "downloads": "50K+",
+    "packageId": "com.geotag.gpsmapcamera",
+    "storeUrl": "https://play.google.com/store/apps/details?id=com.geotag.gpsmapcamera",
+    "privacyUrl": "privacy-geotag.html",
+    "icon": "assets/icons/geotag.svg",
+    "accentColor": "#00df81",
+    "gradient": "from-emerald-500 to-green-700",
+    "tags": ["Live GPS & Map Stamp", "Tamper-Proof NTP Time", "Compass Azimuth", "100% On-Device"],
+    "description": "Professional field survey and geotagging camera that burns live GPS coordinates, street address, static map tiles, magnetic compass heading, Plus Codes, and SNTP tamper-proof timestamps directly onto photos and videos. All watermarking and EXIF encoding runs 100% locally on your device."
+  },
+  {
     "id": "videocompressor",
     "name": "Video Compressor: Resize Video",
     "tagline": "Compress, convert, and resize videos to reduce file size without losing quality.",

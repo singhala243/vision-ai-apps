@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="geoBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1F17" />
+      <stop offset="50%" stop-color="#0F291E" />
+      <stop offset="100%" stop-color="#064E3B" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00DF81" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="pinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Tile -->
+  <rect width="100" height="100" rx="22" fill="url(#geoBgGrad)" stroke="#00DF81" stroke-width="1.5" stroke-opacity="0.35" />
+
+  <!-- Subtle Radar Grid Rings -->
+  <circle cx="50" cy="52" r="34" fill="none" stroke="#00DF81" stroke-width="0.75" stroke-opacity="0.18" stroke-dasharray="3 3" />
+  <circle cx="50" cy="52" r="24" fill="none" stroke="#00DF81" stroke-width="0.75" stroke-opacity="0.25" />
+
+  <!-- Camera Body -->
+  <rect x="20" y="34" width="60" height="42" rx="10" fill="#14261D" stroke="url(#emeraldGrad)" stroke-width="2.5" />
+  <!-- Camera Top Pentaprism -->
+  <path d="M37 34 L41 26 H59 L63 34 Z" fill="#14261D" stroke="url(#emeraldGrad)" stroke-width="2.2" stroke-linejoin="round" />
+
+  <!-- Viewfinder Flash Dot -->
+  <circle cx="70" cy="42" r="2.5" fill="#FBBF24" />
+
+  <!-- Camera Lens Outer Ring -->
+  <circle cx="50" cy="55" r="14" fill="#0A140F" stroke="url(#emeraldGrad)" stroke-width="2.5" />
+  <circle cx="50" cy="55" r="9" fill="#00DF81" fill-opacity="0.15" />
+
+  <!-- GPS Location Pin Overlaid in Center/Top -->
+  <path d="M50 38 C43.5 38 38.5 43 38.5 49.2 C38.5 57.2 50 67 50 67 C50 67 61.5 57.2 61.5 49.2 C61.5 43 56.5 38 50 38 Z" fill="url(#pinGrad)" stroke="#0A140F" stroke-width="2" />
+  <circle cx="50" cy="49" r="4" fill="#0A140F" />
+
+  <!-- Bottom Coordinate Stamp Pill -->
+  <rect x="26" y="81" width="48" height="8" rx="4" fill="#00DF81" fill-opacity="0.2" stroke="#00DF81" stroke-width="1" stroke-opacity="0.5" />
+  <circle cx="32" cy="85" r="1.6" fill="#00DF81" />
+  <line x1="37" y1="85" x2="68" y2="85" stroke="#A7F3D0" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 3" />
+</svg>

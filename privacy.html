@@ -66,6 +66,7 @@
           <label for="appSelector" class="block text-xs font-medium text-slate-400 mb-1">Select Specific Application:</label>
           <select id="appSelector" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500">
             <option value="general">All Vision AI Labs Apps (General)</option>
+            <option value="geotag">Geotag: GPS Map Camera</option>
             <option value="videocompressor">Video Compressor: Resize Video</option>
             <option value="voicechanger">Voice Changer: Voice Effects</option>
             <option value="watereject">Water Eject: Speaker Cleaner</option>
@@ -247,6 +248,12 @@
   <!-- Dynamic App Selector Script -->
   <script>
     const appNotices = {
+      'geotag': {
+        title: 'Geotag: GPS Map Camera 100% On-Device Stamping & Foreground GPS Notice',
+        body: 'Geotag: GPS Map Camera captures and watermarks all photos and videos 100% locally on your device. Precise GPS location is accessed strictly in the foreground while the app is open to stamp coordinates, map tiles, and addresses onto your captures. No photos, videos, or personal location histories are ever uploaded to or stored on developer cloud servers.',
+        borderClass: 'border-emerald-500/30 bg-emerald-950/30 text-emerald-200',
+        iconClass: 'fa-location-dot text-emerald-400'
+      },
       'videocompressor': {
         title: 'Video Compressor 100% On-Device Processing Notice',
         body: 'Video Compressor processes and transcodes all videos entirely on your local physical device using Android hardware MediaCodec and Media3 Transformer. No video files, audio tracks, or frames are ever uploaded to external cloud servers. The app uses the system Photo Picker and does not request broad storage permissions.',
